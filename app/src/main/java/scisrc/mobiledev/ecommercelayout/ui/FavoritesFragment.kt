@@ -38,7 +38,8 @@ class FavoritesFragment : Fragment() {
 
     private fun loadFavorites() {
         favoriteList.clear()
-        favoriteList.add(Product("หูฟังไร้สาย", "99 บาท", R.drawable.airpods)) // แสดงแค่หูฟัง
+        favoriteList.add(Product("หูฟังไร้สาย", "99 บาท", R.drawable.airpods, "🎧 Gadget"))
+        favoriteList.add(Product("สมาร์ทวอช", "199 บาท", R.drawable.watch, "⌚ Gadget"))
         favoriteAdapter.notifyDataSetChanged()
     }
 

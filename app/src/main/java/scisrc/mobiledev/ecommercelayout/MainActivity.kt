@@ -10,6 +10,8 @@ import scisrc.mobiledev.ecommercelayout.databinding.ActivityMainBinding
 import scisrc.mobiledev.ecommercelayout.ui.FavoritesFragment
 import scisrc.mobiledev.ecommercelayout.ui.HomeFragment
 import scisrc.mobiledev.ecommercelayout.ui.ProfileFragment
+import scisrc.mobiledev.ecommercelayout.ui.ProductsFragment
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -38,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> replaceFragment(HomeFragment()) // ไปหน้า Home
                 R.id.nav_profile -> replaceFragment(ProfileFragment()) // ไปหน้า Profile
                 R.id.nav_favorites -> replaceFragment(FavoritesFragment())
+                R.id.nav_products -> replaceFragment(ProductsFragment())
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true

@@ -46,18 +46,18 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadProducts() {
-        productList.add(Product("Sunsilk Shampoo", "149 บาท", R.drawable.sunsilk))
-        productList.add(Product("เสื้อกันหนาว", "134 บาท", R.drawable.hoodie))
-        productList.add(Product("หูฟังไร้สาย", "99 บาท", R.drawable.airpods))
-        productList.add(Product("นาฬิกา LED", "126 บาท", R.drawable.watch))
+        productList.add(Product("Sunsilk Shampoo", "149 บาท", R.drawable.sunsilk, "🧴 ผลิตภัณฑ์"))
+        productList.add(Product("เสื้อกันหนาว", "134 บาท", R.drawable.hoodie, "👕 เสื้อผ้า"))
+        productList.add(Product("หูฟังไร้สาย", "99 บาท", R.drawable.airpods, "🎧 Gadget"))
+        productList.add(Product("นาฬิกา LED", "126 บาท", R.drawable.watch, "⌚ Gadget"))
         productAdapter.notifyDataSetChanged()
     }
 
     private fun loadPromotions() {
-        promoList.add(Product("Sunsilk Shampoo", "ลดเหลือ 99 บาท", R.drawable.sunsilk))
-        promoList.add(Product("เสื้อกันหนาว", "ลดเหลือ 110 บาท", R.drawable.hoodie))
-        promoList.add(Product("หูฟังไร้สาย", "ลดเหลือ 79 บาท", R.drawable.airpods))
-        promoList.add(Product("นาฬิกา LED", "ลดเหลือ 100 บาท", R.drawable.watch))
+        promoList.add(Product("Sunsilk Shampoo", "ลดเหลือ 99 บาท", R.drawable.sunsilk, "🧴 ผลิตภัณฑ์"))
+        promoList.add(Product("เสื้อกันหนาว", "ลดเหลือ 110 บาท", R.drawable.hoodie, "👕 เสื้อผ้า"))
+        promoList.add(Product("หูฟังไร้สาย", "ลดเหลือ 79 บาท", R.drawable.airpods, "🎧 Gadget"))
+        promoList.add(Product("นาฬิกา LED", "ลดเหลือ 100 บาท", R.drawable.watch, "⌚ Gadget"))
         promoAdapter.notifyDataSetChanged()
     }
 
