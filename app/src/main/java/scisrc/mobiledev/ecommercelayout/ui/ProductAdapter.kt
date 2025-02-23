@@ -1,5 +1,6 @@
 package scisrc.mobiledev.ecommercelayout.ui
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -11,9 +12,16 @@ class ProductAdapter(private val productList: List<Product>) :
     class ProductViewHolder(private val binding: ItemProductBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
-            binding.productImage.setImageResource(product.imageResId) // แสดงรูปภาพ
+            binding.productImage.setImageResource(product.imageResId)
             binding.productName.text = product.name
             binding.productPrice.text = product.price
+
+            // 🔹 เปลี่ยนสีของราคาตามเงื่อนไข
+            if (product.price.contains("ลดเหลือ")) {
+                binding.productPrice.setTextColor(Color.RED)  // สีแดง สำหรับราคาที่ลดแล้ว
+            } else {
+                binding.productPrice.setTextColor(Color.BLACK)  // สีดำ สำหรับราคาปกติ
+            }
         }
     }
 
