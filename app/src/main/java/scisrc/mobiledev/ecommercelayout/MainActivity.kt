@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import scisrc.mobiledev.ecommercelayout.databinding.ActivityMainBinding
+import scisrc.mobiledev.ecommercelayout.ui.FavoritesFragment
 import scisrc.mobiledev.ecommercelayout.ui.HomeFragment
 import scisrc.mobiledev.ecommercelayout.ui.ProfileFragment
 
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_home -> replaceFragment(HomeFragment()) // ไปหน้า Home
                 R.id.nav_profile -> replaceFragment(ProfileFragment()) // ไปหน้า Profile
+                R.id.nav_favorites -> replaceFragment(FavoritesFragment())
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true
